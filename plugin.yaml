@@ -1,0 +1,28 @@
+plugins:
+
+  javaplugin:
+    executor: central_deployment_agent
+    source: https://github.com/dfilppi/javaplugin/archive/master.zip
+
+node_types:
+
+  java.Test:
+    derived_from: cloudify.nodes.Root
+    properties:
+      prop1:
+        type: string
+      prop2:
+        type: integer
+    interfaces:
+      cloudify.interfaces.lifecycle:
+        create:
+          implementation: javaplugin.java_adapter.java.calljava
+          inputs:
+            jars:
+               
+            func:
+              description: the java operation to call
+              type: string
+            args:
+              description: arg dict to pass
+              default: {}
