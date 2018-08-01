@@ -2,7 +2,7 @@ plugins:
 
   javaplugin:
     executor: central_deployment_agent
-    source: https://github.com/dfilppi/javaplugin/archive/master.zip
+    source: javaplugin
 
 node_types:
 
@@ -18,11 +18,9 @@ node_types:
         create:
           implementation: javaplugin.java_adapter.java.calljava
           inputs:
-            jars:
-               
-            func:
-              description: the java operation to call
+            opclass:
+              description: the java operation implementation class name
               type: string
             args:
-              description: arg dict to pass
-              default: {}
+              description: arg array to pass
+              default: []

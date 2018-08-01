@@ -15,6 +15,6 @@ node_templates:
       cloudify.interfaces.lifecycle:
         create:
           inputs:
-            func: func1
-            args:
-              arg1: val1
+            opclass: com.def.plugin.operations.TestOperation
+            args: [arg1]
+              
