@@ -2,7 +2,7 @@ tosca_definitions_version: cloudify_dsl_1_3
 
 imports:
   - http://www.getcloudify.org/spec/cloudify/4.3/types.yaml
-  - plugins/javaplugin/plugin.yaml
+  - https://raw.githubusercontent.com/dfilppi/javaplugin/master/plugin.yaml
 
 node_templates:
 

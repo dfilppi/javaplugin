@@ -2,7 +2,7 @@ plugins:
 
   javaplugin:
     executor: central_deployment_agent
-    source: javaplugin
+    source: https://github.com/dfilppi/javaplugin/archive/master.zip
 
 node_types:
 
