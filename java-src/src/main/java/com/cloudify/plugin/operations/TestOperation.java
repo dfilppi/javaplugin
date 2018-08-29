@@ -1,6 +1,6 @@
-package com.def.plugin.operations;
+package com.cloudify.plugin.operations;
 
-import com.def.plugin.context.Context;
+import com.cloudify.plugin.context.Context;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

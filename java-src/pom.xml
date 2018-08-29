@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.def</groupId>
+	<groupId>com.cloudify</groupId>
 	<artifactId>plugin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -15,6 +15,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -44,7 +45,7 @@
 							<archive>
 								<manifest>
 									<mainClass>
-										com.def.plugin.Plugin
+										com.cloudify.plugin.Plugin
 									</mainClass>
 								</manifest>
 							</archive>
